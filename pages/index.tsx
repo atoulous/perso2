@@ -8,8 +8,8 @@ const HomePage = () => {
   return (
     <Layout>
       <NextSeo
-        title="Home | Tree"
-        description="A short description goes here."
+        title="Aymeric Toulouse Portfolio"
+        description="Aymeric Toulouse Fullstack Javascript Developer"
       />
       <Fade in>
         <Home />

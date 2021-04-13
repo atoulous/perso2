@@ -70,14 +70,14 @@ export default function CallToActionWithAnnotation() {
                 color={useColorModeValue('gray.800', 'gray.300')}
                 w={71}
                 position={'absolute'}
-                right={-71}
+                right={-62}
                 top={'10px'}
               />
               <Text
                 fontSize={'lg'}
                 fontFamily={'Caveat'}
                 position={'absolute'}
-                right={'-125px'}
+                right={'-90px'}
                 top={'-15px'}
                 transform={'rotate(10deg)'}
               >

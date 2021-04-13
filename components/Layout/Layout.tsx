@@ -8,9 +8,7 @@ import Footer from '../Footer';
 const Layout = ({ children }) => (
   <>
     <Header />
-    <Box paddingTop={'60px'}>
-        {children}
-    </Box>
+      {children}
     <Footer />
   </>
 );
