@@ -55,13 +55,14 @@ export default function StatsGridWithImage() {
                 mb={5}
                 fontSize={{ base: '3xl', md: '5xl' }}
               >
-                21st century agriculture
+                JavaScript for futur
               </Heading>
               <Text fontSize={'xl'} color={'gray.400'}>
-                The NewLife™ technology allows you to monitor your crops and get
-                complete insights at real time. The proprietary
-                software/hardware ecosystem prevents your plants from getting
-                neglected.
+                JavaScript is everywhere these days.<br/>
+                I use it on front-end with <StatsText>ReactJS</StatsText> and back-end with <StatsText>NodeJS</StatsText>,
+                on mobile with <StatsText>React Native</StatsText> and even on desktop with <StatsText>Electron</StatsText>.<br/>
+                And theses are only my favorites, there are plenty of other JavaScript frameworks.
+                This has led it to become nowadays one of the most wanted job skills.
               </Text>
             </Box>
 
@@ -98,38 +99,34 @@ const StatsText = ({ children }: { children: ReactNode }) => (
 
 const stats = [
   {
-    title: '10+',
+    title: 'The #1',
     content: (
       <>
-        <StatsText>Software modules</StatsText> for detailed monitoring and
-        real-time analytics
+        The most popular technology according to StackOverflow’s 2020 Developer survey.
       </>
     ),
   },
   {
-    title: '24/7',
+    title: 'A big community',
     content: (
       <>
-        <StatsText>Analytics</StatsText> enabled right in your dashboard without
-        history limitations
+        There are probably more JavaScript frameworks out there than actually developers using them.
       </>
     ),
   },
   {
-    title: '13%',
+    title: 'A way of evolving',
     content: (
       <>
-        <StatsText>Farms</StatsText> in North America has chosen NewLife™ as
-        their management solution
+        Leaving frameworks and libraries aside, the language itself is constantly evolving.
       </>
     ),
   },
   {
-    title: '250M+',
+    title: 'An alive ecosystem',
     content: (
       <>
-        <StatsText>Plants</StatsText> currently connected and monitored by the
-        NewLife™ software
+        There are literally millions of modules shared in NPM, every day.
       </>
     ),
   },

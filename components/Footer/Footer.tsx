@@ -10,7 +10,7 @@ import {
   chakra,
   useColorModeValue,
 } from '@chakra-ui/react';
-import { FaTwitter, FaYoutube, FaInstagram, FaFacebook } from 'react-icons/fa';
+import { FaTwitter, FaLinkedin, FaMailBulk, FaGithub } from 'react-icons/fa';
 
 import AppStoreBadge from '@/components/AppStoreBadge';
 import PlayStoreBadge from '@/components/PlayStoreBadge';
@@ -49,6 +49,8 @@ const SocialButton = ({
       _hover={{
         bg: useColorModeValue('blackAlpha.200', 'whiteAlpha.200'),
       }}
+      target={'_blank'}
+      rel={'noreferrer'}
     >
       <VisuallyHidden>{label}</VisuallyHidden>
       {children}
@@ -63,47 +65,54 @@ export default function LargeWithAppLinksAndSocial() {
       color={useColorModeValue('gray.700', 'gray.200')}
     >
       <Container as={Stack} maxW={'6xl'} py={10}>
-        <SimpleGrid columns={{ base: 1, sm: 2, md: 4 }} spacing={8}>
+        <SimpleGrid columns={{ base: 1, sm: 2, md: 5 }} spacing={8}>
           <Stack spacing={6}>
             <Box>
               <Logo color={useColorModeValue('gray.700', 'white')} />
             </Box>
             <Stack direction={'row'} spacing={6}>
-              <SocialButton label={'Facebook'} href={'#'}>
-                <FaFacebook />
+              <SocialButton label={'LinkedIn'} href={'https://www.linkedin.com/in/aymeric-toulouse-19a768b7'}>
+                <FaLinkedin />
               </SocialButton>
-              <SocialButton label={'Instagram'} href={'#'}>
-                <FaInstagram />
+              <SocialButton label={'Github'} href={'https://github.com/atoulous'}>
+                <FaGithub />
               </SocialButton>
-              <SocialButton label={'YouTube'} href={'#'}>
-                <FaYoutube />
-              </SocialButton>
-              <SocialButton label={'Twitter'} href={'#'}>
-                <FaTwitter />
+              <SocialButton label={'Mail'} href={'mailto:aymeric.toulouse@gmail.com'}>
+                <FaMailBulk />
               </SocialButton>
             </Stack>
           </Stack>
 
           <Stack align={'flex-start'}>
-            <ListHeader>Company</ListHeader>
-            <Link href={'#'}>About Us</Link>
-            <Link href={'#'}>Blog</Link>
-            <Link href={'#'}>Careers</Link>
-            <Link href={'#'}>Contact Us</Link>
+            <ListHeader>Portfolio</ListHeader>
+            <Link href={'#'}>About Me</Link>
+            <Link href={'#'}>Technology</Link>
+            <Link href={'#'}>Career</Link>
+            <Link href={'#'}>Contact Me</Link>
           </Stack>
 
           <Stack align={'flex-start'}>
-            <ListHeader>Legal</ListHeader>
-            <Link href={'#'}>Cookies Policy</Link>
-            <Link href={'#'}>Privacy Policy</Link>
-            <Link href={'#'}>Terms of Service</Link>
-            <Link href={'#'}>Law Enforcement</Link>
+            <ListHeader>Front-end</ListHeader>
+            <Link href={'#'}>ReactJS</Link>
+            <Link href={'#'}>NextJS</Link>
+            <Link href={'#'}>GraphQL Apollo</Link>
+            <Link href={'#'}>Webpack</Link>
           </Stack>
 
           <Stack align={'flex-start'}>
-            <ListHeader>Install App</ListHeader>
-            <AppStoreBadge />
-            <PlayStoreBadge />
+            <ListHeader>Back-end</ListHeader>
+            <Link href={'#'}>NodeJS</Link>
+            <Link href={'#'}>Express</Link>
+            <Link href={'#'}>NestJS</Link>
+            <Link href={'#'}>GraphQL</Link>
+          </Stack>
+
+          <Stack align={'flex-start'}>
+            <ListHeader>DevOps</ListHeader>
+            <Link href={'#'}>Docker</Link>
+            <Link href={'#'}>Unix</Link>
+            <Link href={'#'}>AWS</Link>
+            <Link href={'#'}>ELK</Link>
           </Stack>
         </SimpleGrid>
       </Container>
@@ -122,7 +131,7 @@ export default function LargeWithAppLinksAndSocial() {
           justify={{ md: 'space-between' }}
           align={{ md: 'center' }}
         >
-          <Text>© 2020 Chakra Templates. All rights reserved</Text>
+          <Text>© 2021 Aymeric Toulouse. All rights reserved</Text>
         </Container>
       </Box>
     </Box>
